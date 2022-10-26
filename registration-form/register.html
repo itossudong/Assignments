@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="register.css" />
+  </head>
+
+  <body>
+    <header></header>
+    <main>
+      <div class="container">
+        <!-- <div class="top-section"> -->
+        <h1>Register</h1>
+        <div class="reg-box">
+          <form action="login.html">
+            <label for="firstname">First Name:</label>
+            <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              placeholder="firstname"
+              required
+            />
+
+            <label for="lastname">Last Name:</label>
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="lastname"
+              required
+            />
+
+            <label for="number">Phone Number:</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"
+              placeholder="0814-222-4444"
+              required
+            />
+
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              pattern="/^[a-zA-Z0-9.!#$.+@gmail\.com"
+              name="email"
+              id="email"
+              placeholder="example1@zuri.com"
+              required
+              minlength="8"
+            />
+
+            <label for="gender">Choose your Gender:</label>
+            <select name="gender" id="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+
+            <label for="birthday">Birthday:</label>
+            <input
+              type="date"
+              id="birthday"
+              name="birthday"
+              placeholder="Date of Birth"
+              required
+            />
+
+            <label for="favcolor">Favourite Colour:</label>
+            <input type="color" value="#ffff00" required />
+
+            <button type="submit">REGISTER</button>
+            <p class="signup-call">
+              Already have an account? <a href="login.html">Login here</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

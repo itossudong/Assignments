@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+
+  <body>
+    <header></header>
+    <main>
+      <div class="container">
+        <h1>Login Page</h1>
+        <div class="login-box">
+          <form action="success.html">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              pattern="/^[a-zA-Z0-9.!#$.+@gmail\.com"
+              name="email"
+              id="email"
+              placeholder="example1@zuri.com"
+              required
+              minlength="8"
+            />
+            <label for="password">Password</label>
+            <input
+              type="password"
+              pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+              name="password"
+              id="password"
+              title="Password must contain: Minimum 6 characters with at least 1 Alphabet and 1 Number"
+              placeholder="Enter password..."
+            />
+            <input type="checkbox" name="checkbox" id="remember-me" />
+            <label id="remember-me" name="remember-me">Remember me</label>
+            <div class="login-forget">
+              <a href="#" class="forgot">Forgot your password?</a>
+              <button type="submit">LOG IN</button>
+            </div>
+          </form>
+          <!-- Prompt for registration -->
+          <p class="signup-call">
+            Don't have an account yet?
+            <a href="register.html">sign-up here.</a>
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
