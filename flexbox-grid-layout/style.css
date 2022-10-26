@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    font-size: 15px;
+    /* font-family: 'Big Shoulders Display', cursive; */
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(0, 0%, 95%);
+}
+
+.main-container{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-height: 100vh;
+    background: hsl(0, 0%, 95%);
+}
+
+.container{
+    height: 388.13px;
+}
+
+.container1{
+    background: hsl(31, 77%, 52%);
+    border-radius: 6px 0 0 6px;
+}
+.container2{
+    background: hsl(184, 100%, 22%);
+}
+.container3{
+    background: hsl(179, 100%, 13%);
+    border-radius: 0 6px 6px 0;
+}
+
+.container1 .car-brand button{
+    color: hsl(31deg, 77%, 52%);
+}
+.container2 .car-brand button{
+    color: hsl(184, 100%, 22%);
+}
+.container3 .car-brand button{
+    color: hsl(179, 100%, 13%);
+}
+.container1 .car-brand button:hover,
+.container2 .car-brand button:hover,
+.container3 .car-brand button:hover{
+    color: #f2f2f2;
+}
+
+.img-wrapper img{
+    padding: 2rem 2rem 0;
+}
+
+.car-brand{
+    padding: 2rem;
+} 
+
+.car-brand h2{
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+}
+
+.car-brand p{
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-top: 1.3rem;
+}
+
+button{
+    background: hsl(0deg, 0%, 95%);
+    margin-top: 3rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: 16px;
+    border: 2px solid hsl(0, 0%, 95%);
+    cursor: pointer;
+    font-family: 'Lexend Deca', sans-serif;
+    transition: all 0.5s ease-out;
+}
+
+button:hover,
+button:active{
+    border: 2px solid white;
+    background: transparent;
+    color: hsl(0, 0%, 95%);
+}
+
+.to-grid{
+    background-color: hsl(179, 100%, 13%);;
+    color: white;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 12px;
+    border: 2px solid #ccc;
+    transition: all 0.5s ease-out;
+}
+
+.to-grid:hover,
+.to-grid:active{
+    background-color: hsl(31, 77%, 52%);
+}
+
+
+@media (max-width:56rem ){
+    .main-container{
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .container{
+        width: 100%;
+        max-width: 375px;
+        height: 100%;
+    }
+    .container1{
+        border-radius: 6px 6px 0 0;
+    }
+    .container3{
+        border-radius: 0 0 6px 6px;
+    }
+    .to-grid{
+        right: 0.9rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0.8rem 0.25rem;
+    }
+}

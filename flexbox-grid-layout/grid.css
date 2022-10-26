@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: hsl(254, 13%, 40%);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+
+main{
+    display: grid;
+    /* grid-template-rows: repeat(4, 1fr); */
+    grid-template-areas: 
+    'a a b'
+    'a a b'
+    'c d d'
+    'c e e';
+    grid-gap: 12px;
+    width: 70%;
+    padding: 4rem;
+    background-color: rgb(40, 40, 40);
+    height: 90%;
+}
+
+main div{
+    padding: 2rem;
+    text-align: center;
+}
+
+.box-a{
+    background-color: #EB5020;
+    grid-area: a;
+}
+.box-b{
+    background-color: #FFA401;
+    grid-area: b;
+}
+.box-c{
+    background-color: #05AA42;
+    grid-area: c;
+}
+.box-d{
+    background-color: #01AEFD;
+    grid-area: d;
+}
+.box-e{
+    background-color: #01AEFD;
+    grid-area: e;
+}
+
+.to-flex{
+    background-color: #05AA42;
+    color: white;
+    position: fixed;
+    bottom: 1.5rem;
+    left: 2rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 12px;
+    /* border: 2px solid; */
+    border: none;
+    transition: all 0.5s ease-out;
+}
+
+.to-flex:hover,
+.to-flex:active{
+    background-color: #01AEFD;
+    border: 1px solid white;
+}
+
+/* Some reponsiveness just for practice */
+@media (max-width: 500px){
+    main{
+        width: 100%;
+        padding: 1rem;
+        grid-gap: 15px;
+        grid-template-areas: 
+        'a a b'
+        'c d d'
+        'c e e';
+    }
+    main div{
+        padding: 2em;
+    }
+    .to-flex{
+        bottom: 2rem;
+        left: 2rem;
+    }
+
+}
